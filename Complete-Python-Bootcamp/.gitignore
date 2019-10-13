@@ -1,0 +1,4 @@
+.ideal/*
+venv/*
+*.xml
+*.iml
