@@ -1,7 +1,7 @@
 from colorama import Fore, Style
 
 try:
-    for i in ['a','b','c']:
+    for i in ['a', 'b', 'c']:
         print(i**2)
 except:
     print(Fore.RED + 'you get a type error with operate')
@@ -29,7 +29,7 @@ def ask():
             print(Fore.RED + 'An error occurred! Please try again!')
             continue
         else:
-            print(Fore.LIGHTGREEN_EX + 'Thank you, your number squared is:' + str(inp));
+            print(Fore.LIGHTGREEN_EX + 'Thank you, your number squared is:' + str(inp))
             break
 
 ask()
