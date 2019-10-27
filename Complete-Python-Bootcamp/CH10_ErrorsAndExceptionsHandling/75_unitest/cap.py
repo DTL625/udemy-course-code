@@ -1,2 +1,3 @@
 def cap_text(txt):
-    return txt.title()
+    # return txt.capitalize() # sample 1
+    return txt.title() # sample 2
