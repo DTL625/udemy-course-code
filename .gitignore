@@ -1,2 +1,6 @@
 *.xml
 *.iml
+venv/*
+.ideal/*
+*.xml
+*.iml

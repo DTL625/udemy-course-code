@@ -40,7 +40,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/lincn/Udemy/Millstore-Proj1/venv"
+VIRTUAL_ENV="/Users/lincn/Udemy/complete-python-bootcamp/Complete-Python-Bootcamp/venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
