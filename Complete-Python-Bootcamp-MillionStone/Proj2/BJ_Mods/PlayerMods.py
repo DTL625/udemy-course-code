@@ -1,6 +1,10 @@
 import BJ_Mods.DeckMods as deckMods
 
 class player:
+    STATUS_NORMAL = ''
+    STATUS_BJ     = 'BLACK JACK!'
+    STATUS_BUSTS  = 'BUSTS!'
+
     deckMod = deckMods.deck();
     cardValues = deckMod.values
 
@@ -11,6 +15,7 @@ class player:
         self.currentCard = 0
         self.score = 0
         self.ace = 0
+        self.status = 0
 
     def get_card(self, newCard):
         # cal score
@@ -18,6 +23,13 @@ class player:
         # get card
         self.hand_card[self.currentCard] = newCard
         self.currentCard += 1
+        # get boost or bj
+        if (self.score == 21):
+            self.status = self.STATUS_BJ
+        elif (self.score > 21):
+            self.status = self.STATUS_BUSTS
+        else:
+            self.status = self.STATUS_NORMAL
 
     def cal_score(self, newCard):
         # get val string
@@ -51,5 +63,6 @@ class player:
 
                 showHandCard.insert(showHandCnt, handCard);
                 showHandCnt += 1
-        print(f'player:{self.name} \t current score: {showScore}')
-        print('hand cards: {}'.format('\t'.join(showHandCard)));
+        print(f'[{self.name}] beats:{self.bets}\tcurrent score: {showScore}  {self.status}')
+        print('----------------------------------------------------')
+        print('{}'.format('\t'.join(showHandCard)));
