@@ -1,7 +1,7 @@
 import random
 
 class deck:
-    currentCard = 0
+    # currentCard = 0
     cardStore = {}
     suits = ('Hearts', 'Diamonds', 'Spades', 'Clubs')
     ranks = ('Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten', 'Jack', 'Queen', 'King', 'Ace')
@@ -11,6 +11,7 @@ class deck:
 
     def __init__(self):
         i = 0;
+        self.currentCard = 0;
         for suit in self.suits:
             for rank in self.ranks:
                 self.cardStore[i] = {suit : rank}

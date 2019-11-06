@@ -10,8 +10,10 @@ class player:
 
     def __init__(self, name):
         self.name = name
-        self.hand_card = {}
         self.bets = 1000
+
+    def get_new_round(self):
+        self.hand_card = {}
         self.currentCard = 0
         self.score = 0
         self.ace = 0

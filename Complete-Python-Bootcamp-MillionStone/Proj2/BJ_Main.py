@@ -23,11 +23,19 @@ def check_if_get_more(moreString):
         else:
             return (getMoreCard == 'y')
 
+def show_winner(winner, loser):
+    winner.bets += currentBet
+    loser.bets -= currentBet
+    winner.status = 'Winner!!!'
+
+
 getMoreRound = True
 while (getMoreRound):
     # 1.洗牌
     cardMod = deckMods.deck()
     cardStore = cardMod.get_card_store()
+    player.get_new_round()
+    dealer.get_new_round()
     # print(f'card store: {cardStore[0]},{cardStore[1]},{cardStore[2]},{cardStore[3]}')
 
     # 2.發牌(玩家看牌 & 莊家展示牌)
@@ -74,14 +82,15 @@ while (getMoreRound):
         getMoreCard = (dealer.score <= 17)
 
     # 6.計算分數
-    if (player.status == statusMod.STATUS_BUSTS or player.score <= dealer.score):
-        player.bets -= currentBet
-        dealer.bets += currentBet
-        dealer.status = 'Win!!!'
+    if (player.status == statusMod.STATUS_BUSTS and dealer.status == statusMod.STATUS_NORMAL):
+        show_winner(dealer, player)
+    elif (dealer.status == statusMod.STATUS_BUSTS and player.status == statusMod.STATUS_NORMAL) :
+        show_winner(player, dealer)
     else:
-        player.bets += currentBet
-        dealer.bets -= currentBet
-        player.status = 'Win!!!'
+        if (dealer.score >= player.score):
+            show_winner(dealer, player)
+        else:
+            show_winner(player, dealer)
+
     show_result(dealShowAll = True)
-    # todo:: 須解決新一局沒有重新洗牌問題。
     getMoreRound = check_if_get_more(f'是否再來一局？（y/n）')
