@@ -1,3 +1,9 @@
+'''
+    Program: Calculator
+    Auto: LDT
+    Copyright 2020.03
+'''
+
 import re
 
 print("Our magic calculator")
