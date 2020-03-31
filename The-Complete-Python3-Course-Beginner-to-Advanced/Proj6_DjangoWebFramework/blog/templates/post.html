@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{{ post_item.title }}</title>
-</head>
-<body>
-<div>
-    <a href="/"> <- back to index</a>
+{% extends 'base.html' %}
+{% block title %} {{ post_item.title }} {% endblock %}
+
+{% block content %}
+    <h1>{{ post_item.title }}</h1>
     <p>{{ post_item.content }} </p>
-</body>
-</html>
+{% endblock %}
+

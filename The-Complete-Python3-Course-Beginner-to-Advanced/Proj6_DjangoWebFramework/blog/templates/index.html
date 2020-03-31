@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-    <h1>I'm a index page <br>----------------</h1>
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>I'm a index page </h1>
 
     {% for post in  posts %}
         <div>
@@ -14,6 +10,4 @@
         </div>
 
     {% endfor %}
-
-</body>
-</html>
+{% endblock %}
