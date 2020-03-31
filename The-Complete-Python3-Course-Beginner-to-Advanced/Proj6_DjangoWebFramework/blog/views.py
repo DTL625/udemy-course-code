@@ -15,3 +15,7 @@ def post(request, slug):
     print(pst)
 
     return render(request, 'post.html', {'post_item': pst})
+
+
+def about(request):
+    return render(request, 'about.html')
