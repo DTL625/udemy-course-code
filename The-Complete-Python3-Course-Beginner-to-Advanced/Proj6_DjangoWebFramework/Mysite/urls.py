@@ -20,9 +20,7 @@ from django.conf.urls import url
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'post/$', blog_views.post),
-
+    url(r'^about/$', blog_views.about),
+    url(r'^post/(.*)$', blog_views.post),
     url(r'^$', blog_views.Index),
-    # url(r'^post/', post),
-    # path('post/', blog_views.post),
 ]

@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{% post.title %}</title>
+    <title>{{ post_item.title }}</title>
 </head>
 <body>
-    <div> {% post.content %}</div>
+<div>
+    <a href="/"> <- back to index</a>
+    <p>{{ post_item.content }} </p>
 </body>
 </html>

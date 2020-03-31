@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
 from .models import Post
 
@@ -9,5 +9,13 @@ def Index(request):
     return render(request, 'index.html', {'posts': posts})
 
 
-def post(request):
-    return HttpResponse('I\'m the single post page.')
+def post(request, slug):
+    pst = get_object_or_404(Post, slug=slug)
+    print(slug)
+    print(pst)
+
+    return render(request, 'post.html', {'post_item': pst})
+
+
+def about(request):
+    return render(request, 'about.html')
