@@ -1,5 +1,5 @@
 
-def compareTwoBoxsTwice(box: list, box2:list):
+def compareTwoBoxsTwice(box: list, box2: list):
   for item in box:
     print(item) # O(n)
 
