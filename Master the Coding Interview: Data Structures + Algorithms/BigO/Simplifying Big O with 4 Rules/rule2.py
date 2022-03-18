@@ -13,4 +13,4 @@ def printFirstItemThenFirstHalfThenSayHi100Times(times: list):
   for i in range(100):
     print('hi' + str(i)) # O(100)
   
-printFirstItemThenFirstHalfThenSayHi100Times([1,2,3,4,5])
+printFirstItemThenFirstHalfThenSayHi100Times([1,2,3,4,5]) ## O(1 + n/2 + 100)
