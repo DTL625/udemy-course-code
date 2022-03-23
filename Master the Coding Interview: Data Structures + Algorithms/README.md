@@ -2,6 +2,7 @@
 
 [網址](https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms)
 
-## 課程章節
+## **章節介紹**
 
-3. BigO
+### Simplifying Big O with 4 Rules
+
