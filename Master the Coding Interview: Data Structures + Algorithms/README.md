@@ -1,11 +1,10 @@
 # Master the Coding Interview: Data Structures + Algorithms
 
-[課程網址](https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms)
+- [課程網址](https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms)
 
+- [課程筆記](https://www.notion.so/linhsinyi/a2141956a8724a619954668b8feb8876)
 
-## **介紹**
-
-### BigO
+### CH.3 BigO
 
 無論現今電腦的運行速度多快或記憶體容量多大，但對程式開發者來說更會探討的是什麼才是好的Code（演算法）？
 
