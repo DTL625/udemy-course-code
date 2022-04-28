@@ -1,8 +1,15 @@
 # Master the Coding Interview: Data Structures + Algorithms
 
+課程中使用js進行示範相關 code, 自行使用python改寫內容
+
 - [課程網址](https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms)
 
 - [課程筆記](https://www.notion.so/linhsinyi/a2141956a8724a619954668b8feb8876)
+
+
+## 課程章節介紹
+
+[#todo:這裡放上資料夾結構](http://www.google.com)
 
 ### CH.3 BigO
 
@@ -16,3 +23,5 @@
 
 介紹如何在面試白板題目中應對。
 [課程筆記](https://www.notion.so/linhsinyi/How-to-solve-solve-coding-problem-c05b0e2399a0426aa1d7bfc4c1854eff)
+
+### CH.5 Datastructure: Array
