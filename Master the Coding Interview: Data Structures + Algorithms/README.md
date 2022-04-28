@@ -9,7 +9,11 @@
 
 ## 課程章節介紹
 
-[#todo:這裡放上資料夾結構](http://www.google.com)
+```
+├── BigO
+├── DSArray
+└── How_to_solving_coding_problem
+```
 
 ### CH.3 BigO
 
