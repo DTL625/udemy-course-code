@@ -12,7 +12,8 @@
 ```
 ├── BigO
 ├── DSArray
-└── How_to_solving_coding_problem
+├── DSHashTable
+└── SolvingCodingProblem
 ```
 
 ### CH.3 BigO
@@ -29,3 +30,9 @@
 [課程筆記](https://www.notion.so/linhsinyi/How-to-solve-solve-coding-problem-c05b0e2399a0426aa1d7bfc4c1854eff)
 
 ### CH.5 Datastructure: Array
+資料結構中的一種, 會將元素儲存在記憶體中。
+[課程筆記](https://www.notion.so/linhsinyi/Array-introduction-4b3392371e53437f818270fce5c04aaa)
+
+### CH.6 Hash Table
+
+[課程筆記](https://www.notion.so/linhsinyi/Hash-Tables-c0bd148e5b374a1680ccbed37aeec83b#d7d2a16a24bd46b1b199feef0ca01cc2)

@@ -18,3 +18,5 @@
 
 ### JS
 [JavaScript 全攻略：克服 JS 的奇怪部分](https://www.udemy.com/course/javascriptjs/)
+
+[Master the coding interview data structures algorithms](https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms)
