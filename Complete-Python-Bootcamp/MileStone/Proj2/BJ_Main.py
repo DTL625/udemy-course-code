@@ -4,9 +4,9 @@ import BJ_Mods.PlayerMods as playerMods
 
 # init
 min_bet = 5
-statusMod = playerMods.player
-dealer = playerMods.player('dealer')
-player = playerMods.player('user1')
+statusMod = PlayerMods.player
+dealer = PlayerMods.player('dealer')
+player = PlayerMods.player('user1')
 
 def show_result(dealShowAll = False):
     os.system('clear')
@@ -32,7 +32,7 @@ def show_winner(winner, loser):
 getMoreRound = True
 while (getMoreRound):
     # 1.洗牌
-    cardMod = deckMods.deck()
+    cardMod = DeckMods.deck()
     cardStore = cardMod.get_card_store()
     player.get_new_round()
     dealer.get_new_round()
