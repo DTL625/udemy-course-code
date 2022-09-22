@@ -4,8 +4,8 @@
 課程清單：  
 ```
 ├── Complete-Python-Bootcamp
-├── JavaScript 全攻略：克服 JS 的奇怪部分
-├── Master the Coding Interview: Data Structures + Algorithms
+├── JavaScript(全攻略：克服 JS 的奇怪部分)
+├── Master-the-Coding-Interview-Data-Structures-Algorithms
 ├── Python-for-Algorithms-Data-Structures-and-Interviews
 ├── The-Complete-Python3-Course-Beginner-to-Advanced
 ├── javascript-learn
