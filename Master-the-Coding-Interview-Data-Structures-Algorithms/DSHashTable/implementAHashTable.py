@@ -10,7 +10,7 @@ class HashTable:
         return res
 
     def set(self, key, value):
-        self.table[self._hash(key)] = value
+        self.table[self._hash(key)] = [key, value]
 
     def get(self, key):
         return self.table[self._hash(key)]
@@ -22,16 +22,17 @@ class HashTable:
     def keys(self):
         output = []
         # self.table.items()
-        for hash, fruit in self.table:
-          if fruit is not None:
-            output.append(fruit)
+        for obj in self.table:
+          if obj is not None:
+            output.append(obj[0])
         return output
-
 
 hashTb = HashTable(size=50)
 hashTb.set('grape', 100)
 hashTb.set('apple', 50)
+hashTb.set('orange', 70)
 
 print(hashTb.get('grape'))
 print(hashTb.get('apple'))
+print(hashTb.get('orange'))
 print(hashTb.keys())
