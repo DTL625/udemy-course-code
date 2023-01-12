@@ -13,6 +13,7 @@ class linkedList:
         self.head = None
         self.tail = None
 
+    # ch.97
     def append_node(self, value):
         if not isinstance(value, listNode):
             value = listNode(value)
@@ -23,6 +24,7 @@ class linkedList:
             self.tail.next = value
         self.tail = value
 
+    # ch.98
     def prepend_node(self, value):
         if not isinstance(value, listNode):
             value = listNode(value)
@@ -38,6 +40,7 @@ class linkedList:
             current = current.next
         print(rs)
 
+
 ll = linkedList()
 ll.append_node(10)
 ll.append_node(21)
@@ -48,4 +51,3 @@ ll.append_node(3)
 ll.prepend_node(31)
 
 ll.print_list()
-
