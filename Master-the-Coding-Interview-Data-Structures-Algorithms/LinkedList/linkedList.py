@@ -24,7 +24,11 @@ class linkedList:
         self.tail = value
 
     def prepend_node(self, value):
-        pass
+        if not isinstance(value, listNode):
+            value = listNode(value)
+        if self.head is not None:
+            value.next = self.head
+        self.head = value
 
     def print_list(self):
         current = self.head
@@ -38,5 +42,10 @@ ll = linkedList()
 ll.append_node(10)
 ll.append_node(21)
 ll.append_node(12)
+ll.prepend_node(15)
+ll.append_node(4)
+ll.append_node(3)
+ll.prepend_node(31)
+
 ll.print_list()
 
