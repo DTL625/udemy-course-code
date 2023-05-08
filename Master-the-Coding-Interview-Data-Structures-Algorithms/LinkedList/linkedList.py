@@ -55,6 +55,32 @@ class linkedList:
             current_idx += 1
         self.len += 1
 
+    def remove(self, idx):
+        current_node = self.head
+        previous_node = None
+        current_idx = 0
+        if idx > self.len:
+            idx = self.len
+
+        while current_node is not None:
+            if current_idx == idx:
+                if idx == 0:
+                    # 頭
+                    self.head = current_node.next
+                    current_node = None
+                else:
+                    # 命中
+                    previous_node.next = current_node.next
+                    # previous_node = current_node
+                    # current_node = current_node.next
+            elif idx == self.len and current_idx == self.len - 1:
+                    # 尾
+                previous_node.next = None
+            previous_node = current_node
+            current_node = current_node.next
+            current_idx += 1
+        self.len -= 1
+
     def print_list(self):
         current = self.head
         rs = []
@@ -62,7 +88,6 @@ class linkedList:
             rs.append(current.value)
             current = current.next
         print(rs)
-
 
 
 ll = linkedList()
@@ -73,7 +98,8 @@ ll.append_node(12)
 ll.append_node(4)
 ll.append_node(3)
 ll.print_list()
-ll.insert(5, 80)
+ll.remove(10)
+# ll.insert(5, 80)
 # ll.prepend_node(31)
 
 ll.print_list()
